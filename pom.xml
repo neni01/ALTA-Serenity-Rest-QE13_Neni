@@ -65,6 +65,12 @@
             <version>${serenity.cucumber.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>6.10.4</version> <!-- Use the latest version -->
+            <scope>test</scope>
+        </dependency>
 
         <!-- libraries used directly from serenity-core-->
         <dependency>
@@ -112,6 +118,12 @@
             <artifactId>hamcrest</artifactId>
             <version>2.2</version>
             <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-schema-validator</artifactId>
+            <version>5.3.1</version>
         </dependency>
     </dependencies>
     <build>
@@ -164,7 +176,7 @@
                 <artifactId>serenity-maven-plugin</artifactId>
                 <version>${serenity.maven.version}</version>
                 <configuration>
-                  <tags>${tags}</tags>
+                    <tags>${tags}</tags>
                 </configuration>
                 <executions>
                     <execution>
